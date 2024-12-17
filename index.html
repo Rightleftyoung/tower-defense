@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower Defense</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="hud">
+            <div class="resources">
+                <span id="money">Money: $100</span>
+                <span id="lives">Lives: 20</span>
+                <span id="wave">Wave: 1</span>
+                <span id="score">Score: 0</span>
+            </div>
+            <div class="tower-shop">
+                <div class="tower-option" data-tower="basic" data-cost="50" data-key="1">
+                    <div class="tower-icon basic"></div>
+                    <div class="tower-info">
+                        <div class="tower-name">Basic Tower [1]</div>
+                        <div class="tower-cost">$50</div>
+                    </div>
+                </div>
+                <div class="tower-option" data-tower="sniper" data-cost="100" data-key="2">
+                    <div class="tower-icon sniper"></div>
+                    <div class="tower-info">
+                        <div class="tower-name">Sniper Tower [2]</div>
+                        <div class="tower-cost">$100</div>
+                    </div>
+                </div>
+                <div class="tower-option" data-tower="splash" data-cost="150" data-key="3">
+                    <div class="tower-icon splash"></div>
+                    <div class="tower-info">
+                        <div class="tower-name">Splash Tower [3]</div>
+                        <div class="tower-cost">$150</div>
+                    </div>
+                </div>
+            </div>
+            <button id="start-wave" class="large-button">Start Wave [Space]</button>
+            <div class="controls-help">
+                <h3>Controls:</h3>
+                <ul>
+                    <li>1-3: Select towers</li>
+                    <li>Space: Start wave</li>
+                    <li>Esc: Cancel tower placement</li>
+                    <li>Click: Place tower</li>
+                </ul>
+            </div>
+        </div>
+        <canvas id="gameCanvas"></canvas>
+    </div>
+    <script src="game.js"></script>
+</body>
+</html>
